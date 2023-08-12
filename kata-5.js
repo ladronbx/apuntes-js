@@ -4,6 +4,6 @@ var multiplicador = 0;
 var x = prompt("La tabla comenzará a multiplicar desde el número 0. Escribe hasta qué número : ");
 
 while(multiplicador <= x){
-    document.write("<h5>"+n+" * "+multiplicador+" = "+(n*multiplicador));
+    document.write("<h5>"+n+" * "+multiplicador+" = "+(n*multiplicador)+"</h5>");
     ++ multiplicador;
 }
