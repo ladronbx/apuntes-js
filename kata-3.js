@@ -1,4 +1,6 @@
 /*
+******-USANDO IF!!!-******
+
 RANGOS NOTAS
 0 - 4: Insuficiente.
 
