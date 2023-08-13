@@ -9,12 +9,29 @@ En este caso realizaremos un programa
 capaz de contar cualquier carácter.
 */
 
-// Creamos la función contador
+// Como propone el curso .reduce
 let contador = string => {
     return string.split('').reduce((total, letter) => {
         total[letter] ? total[letter]++ : total[letter] = 1;
         return total;
     }, {});
+}
+
+let resultado = contador('Hola Mundo');
+console.log(resultado);
+
+// Con for 
+let contador = string => {
+    let total = {};
+    for (let i = 0; i < string.length; i++) {
+        let letter = string[i];
+        if (total[letter]) {
+            total[letter]++;
+        } else {
+            total[letter] = 1;
+        }
+    }
+    return total;
 }
 
 let resultado = contador('Hola Mundo');
