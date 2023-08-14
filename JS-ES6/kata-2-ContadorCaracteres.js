@@ -7,7 +7,7 @@ Hola Mundo (h=1, o=2, l=1 ... )
 
 En este caso realizaremos un programa
 capaz de contar cualquier carácter.
-*/
+
 
 // Como propone el curso .reduce
 let contador = string => {
@@ -19,20 +19,19 @@ let contador = string => {
 
 let resultado = contador('Hola Mundo');
 console.log(resultado);
-
+*/
 // Con for 
-let calcular = texto => {
-    let tot = {};
-    for (let i = 0; i < texto.length; i++) {
-        let letra = texto[i];
-        if (tot[letra]) {
-            tot[letra]++;
-        } else {
-            tot[letra] = 1;
-        }
+const calculadora = string => {
+    let total = {};
+    for(let i = 0; i < string.length; i++){
+        let letra = string[i];
+        if(total[letra]){
+            total[letra]++;
+        }else{
+            total[letra] = 1;
+        };
     }
-    return tot;
+    return total;
 }
-
-let result = calcular('Hola Mundo');
-console.log(result);
+let resultado = calculadora('Hola Mundo');
+console.log(resultado);
