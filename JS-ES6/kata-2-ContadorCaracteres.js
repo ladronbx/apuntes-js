@@ -21,18 +21,18 @@ let resultado = contador('Hola Mundo');
 console.log(resultado);
 
 // Con for 
-let contador = string => {
-    let total = {};
-    for (let i = 0; i < string.length; i++) {
-        let letter = string[i];
-        if (total[letter]) {
-            total[letter]++;
+let calcular = texto => {
+    let tot = {};
+    for (let i = 0; i < texto.length; i++) {
+        let letra = texto[i];
+        if (tot[letra]) {
+            tot[letra]++;
         } else {
-            total[letter] = 1;
+            tot[letra] = 1;
         }
     }
-    return total;
+    return tot;
 }
 
-let resultado = contador('Hola Mundo');
-console.log(resultado);
+let result = calcular('Hola Mundo');
+console.log(result);
