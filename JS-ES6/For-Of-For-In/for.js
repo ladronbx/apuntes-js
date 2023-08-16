@@ -7,7 +7,7 @@ let apellidos = ['perez', 'garcia', 'gomez'];
 for (let setname of apellidos) {
     console.log(setname); // perez, garcia, gomez
 }
-*/
+
 
 // For In
 // Itera sobre todas las propiedades enumerables del objeto, 
@@ -20,3 +20,6 @@ for (let index in apellidos) {
     //apellidos[0] = perez ; apellidos[1] = garcia ; apellidos[2] = gomez
 }
 
+
+
+*/
