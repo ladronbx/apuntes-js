@@ -11,49 +11,65 @@ Con Características:
 + Correr() => velocidad += 10
 + Frenar() => velocidad = 0
 + Aparcar() => console.log(Aparcao!!)
-
-
 */
 
-class Vehiculo {
-    constructor(marca, matricula, ruedas, puertas, años, velocidad) {
+class Vehiculos {
+    constructor(marca, matricula, nruedas, npuertas, anyos, velocidad) {
         this.marca = marca;
         this.matricula = matricula;
-        this.ruedas = ruedas;
-        this.puertas = puertas;
-        this.años = años;
+        this.nruedas = nruedas;
+        this.npuertas = npuertas;
+        this.anyos = anyos;
         this.velocidad = velocidad;
     }
-    correr() {
-        return this.velocidad += 10;
+
+    velocidad() {
+        return velocidad + 10;
     }
+
     frenar() {
-        return this.velocidad = 0;
+        return velocidad = 0;
     }
+
     aparcar() {
-        return console.log("Aparcado!");
+        return console.log("APARCADO!");
     }
 }
 
+//Coche, Moto, Patin y Bicicleta
 
-class Coche extends Vehiculo {
-    constructor(marca, matricula, ruedas, puertas, años) {
-        super(marca, matricula, ruedas, puertas, años);
-        this.consumo = 'Diesel';
+class Coche extends Vehiculos {
+    constructor(marca, matricula, nruedas, npuertas, anyos, velocidad, combustible) {
+        super(marca, matricula, nruedas, npuertas, anyos, velocidad);
+        this.combustible = combustible;
+    }
+
+}
+class Moto extends Vehiculos {
+    constructor(marca, matricula, nruedas, anyos, velocidad) {
+        super(marca, matricula, nruedas, 0, anyos, velocidad);
     }
 }
-class Coche extends Vehiculo {
-    constructor(marca, matricula, ruedas, puertas, años) {
-        super(marca, matricula, ruedas, puertas, años);
+class Patin extends Vehiculos {
+    constructor(marca, matricula, nruedas, anyos, velocidad) {
+        super(marca, matricula, nruedas, 0, anyos, velocidad);
+    }
+
+}
+class Bicicleta extends Vehiculos {
+    constructor(marca, nruedas, anyos) {
+        super(marca, undefined, nruedas, 0, anyos);
+    }
+    noContamino() {
+        console.log("No contamino!")
     }
 }
-class Patin extends Vehiculo {
-    constructor(marca, matricula, ruedas, años) {
-        super(marca, matricula, ruedas, años);
-    }
-}
-class Bicicleta extends Vehiculo {
-    constructor(marca, matricula, ruedas, años) {
-        super(marca, matricula, ruedas, años);
-    }
-}
+
+const yamaha = new Moto('Yamaha','3343LKB',2,2017,197);
+
+console.log(yamaha);
+
+const bmx = new Bicicleta('BMX', 2, 1996);
+
+console.log(bmx);
+bmx.noContamino();

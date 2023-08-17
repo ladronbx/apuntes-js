@@ -56,11 +56,11 @@ play1.imprime();
 */
 
 class Fruta {
-    constructor(tipo,precio){
+    constructor(tipo, precio) {
         this.tipo = tipo;
         this.precio = precio;
     }
-    imprime(){ //Creo un método para la clase Frutas
+    imprime() { //Creo un método para la clase Frutas
         console.log(`La ${this.tipo}, tiene un precio de ${this.precio}`);
     }
 }
@@ -90,7 +90,7 @@ class Persona {
     constructor(nombre) {
         this.nombre = nombre;
     }
-    
+
     saludar() {
         console.log(`Hola, mi nombre es ${this.nombre}`);
     }
