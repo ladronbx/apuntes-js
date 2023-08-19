@@ -39,7 +39,7 @@ sumaAsincrona(2, 4, function (resultado) {
     console.log("El resultado es:", resultado);
 });
 s
-  */
+
 
 // Crea una función contarHasta que tome un número y un callback. 
 // La función debe contar desde 1 hasta el número proporcionado, 
@@ -62,3 +62,7 @@ function finalizarConteo() {
 }
 
 contarHasta(10, finalizarConteo);
+  */
+
+// Callback en eventos
+
