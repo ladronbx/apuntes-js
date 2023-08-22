@@ -10,7 +10,6 @@ while (isNaN(n1) || isNaN(n2) || n1 < 0 || n2 <= 0 || n1 > n2){
     n2 = parseInt(prompt('Dime el segundo número', 0));
 }
 
-for( var i = n1; i <= n2; i++){
+for(var i = n1;i <= n2; i++){
     console.log(i);
 }
-    
