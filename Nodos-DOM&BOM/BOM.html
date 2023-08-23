@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var mywindow = window.open('', '', 'width=200, height=100');
+            console.log("hola");
+            mywindow.document.write('Hola, Mundo!');
+            mywindow.moveBy(250, 250);
+            mywindow.focus();
+        });
+    </script>
+</body>
+</html>
