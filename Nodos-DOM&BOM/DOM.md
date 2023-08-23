@@ -17,7 +17,7 @@ Es una representación estructural del documento permitiendo la modificación de
 
 La estructura del DOM  está compuesta por un conjunto de **NODOS**. 
 
-![Captura de pantalla 2023-08-23 a las 11.32.47.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/40c24578-fcd8-4da1-acde-140f43755f00/Captura_de_pantalla_2023-08-23_a_las_11.32.47.png)
+
 
 ## ¿Qué es un NODO?
 
