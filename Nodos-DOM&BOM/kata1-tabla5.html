@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla del 5</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabla del 5</h1>
+
+        <script>
+            document.write(`<table><th>TABLA 5</th><th>RESULTADO</th>`);
+                for(let i = 0; i <= 10; i++){
+                    document.write(`<tr><td> 5 x ${i} = </td><td>${i*5}</td></tr>`);
+                }
+            document.write(`</table>`);
+
+        </script>
+
+</body>
+
+</html>
