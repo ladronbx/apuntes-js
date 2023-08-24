@@ -1,3 +1,4 @@
+
 //1. Cambiar el contenido de los párrafos con .getElementByTagName()
 //se necesita iterar los elementos p con un bucle for
 let parrafos = document.getElementsByTagName("p");
